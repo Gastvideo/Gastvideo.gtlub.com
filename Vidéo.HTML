@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mes Vidéos - Gastvideo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background: #fafafa;
+      color: #333;
+    }
+    header {
+      background: #004aad;
+      color: white;
+      padding: 20px;
+    }
+    h1 { margin: 0; }
+    .content {
+      margin: 40px auto;
+      max-width: 800px;
+    }
+    .video {
+      background: white;
+      margin: 15px;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    video {
+      max-width: 100%;
+      border-radius: 6px;
+    }
+    a.button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background: #004aad;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+    a.button:hover { background: #002f6c; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mes Vidéos 🎬</h1>
+    <p>Regardez ou téléchargez vos vidéos ici</p>
+  </header>
+
+  <div class="content">
+    <div class="video">
+      <h2>Exemple Vidéo 1</h2>
+      <video controls>
+        <source src="videos/video1.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la lecture vidéo.
+      </video>
+      <br>
+      <a href="videos/video1.mp4" class="button" download>Télécharger</a>
+    </div>
+
+    <div class="video">
+      <h2>Exemple Vidéo 2</h2>
+      <video controls>
+        <source src="videos/video2.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la lecture vidéo.
+      </video>
+      <br>
+      <a href="videos/video2.mp4" class="button" download>Télécharger</a>
+    </div>
+  </div>
+
+  <footer>
+    <p><a href="index.html">⬅ Retour à l'accueil</a></p>
+  </footer>
+</body>
+</html>
